@@ -1,6 +1,6 @@
 <h1>Sistema de Gerenciamento de Tarefas em ReactJS com Suporte a Libras</h1>
 
-  <p>Este projeto foi desenvolvido com muito entusiasmo e dedicação para atender às necessidades da nossa querida amiga [Nome da Amiga] como parte de seu trabalho de faculdade. Além de ser um sistema de gerenciamento de tarefas eficiente em ReactJS, este projeto também tem um recurso importante: suporte à Língua Brasileira de Sinais (Libras). O objetivo principal é proporcionar acessibilidade e inclusão para usuários surdos ou com deficiência auditiva, tornando a aplicação igualmente acessível para todos.</p>
+  <p>Este projeto foi desenvolvido com muito entusiasmo e dedicação para atender às necessidades de uma amiga como parte de seu trabalho de faculdade. Além de ser um sistema de gerenciamento de tarefas eficiente em ReactJS, este projeto também tem um recurso importante: suporte à Língua Brasileira de Sinais (Libras). O objetivo principal é proporcionar acessibilidade e inclusão para usuários surdos ou com deficiência auditiva, tornando a aplicação igualmente acessível para todos.</p>
 
   <h2>Recursos Principais</h2>
     <ul>
@@ -22,12 +22,11 @@
   <h2>Como Utilizar</h2>
     <ol>
         <li>Faça o clone deste repositório no seu computador.</li>
-        <li>Execute <code>npm install</code> para instalar as dependências.</li>
-        <li>Configure as credenciais do Firebase ou da plataforma de hospedagem de dados em tempo real de sua escolha.</li>
-        <li>Inicie o projeto com <code>npm start</code>.</li>
+        <li>Execute <code>yarn</code> para instalar as dependências.</li>
+        <li>Inicie o projeto com <code>npm dev</code>.</li>
     </ol>
 
   <h2>Contribuições</h2>
     <p>Aceitamos contribuições de todos os níveis de habilidade. Se você tiver alguma sugestão de melhoria, correção de bugs ou novos recursos, sinta-se à vontade para abrir uma issue ou enviar um pull request.</p>
 
-  <p>Esperamos que este projeto seja uma ferramenta valiosa para [Nome da Amiga] em seu trabalho de faculdade e que ele também contribua para promover a acessibilidade e inclusão digital, tornando a tecnologia mais acessível para todos. Boa sorte, [Nome da Amiga], em sua jornada acadêmica! 📚✨🤟</p>
+  <p>Esperamos que este projeto seja uma ferramenta valiosa para minha amiga em seu trabalho de faculdade e que ele também contribua para promover a acessibilidade e inclusão digital, tornando a tecnologia mais acessível para todos. Boa sorte, [Nome da Amiga], em sua jornada acadêmica! 📚✨🤟</p>
