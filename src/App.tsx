@@ -1,6 +1,5 @@
-import VLibras from '@djpfs/react-vlibras'
 import { useState } from 'react';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 interface IPhrases {
   phrases: string
   sinals: string[]
@@ -15,7 +14,17 @@ function App() {
   const [inputValue, setInputValue] = useState<string>('')
 
   const removeAcentos = (texto: string) => {
+    const remove = ['!', '?', '.', ',']
+    remove.forEach(item => {
+      texto = texto.replace(item, '')
+    })
+    
     return texto
+      .replace(/[ÀÁÂÃÄÅ]/gi, 'A')
+      .replace(/[ÈÉÊË]/gi, 'E')
+      .replace(/[ÌÍÎÏ]/gi, 'I')
+      .replace(/[ÒÓÔÕÖ]/gi, 'O')
+      .replace(/[ÙÚÛÜ]/gi, 'U')
       .replace(/[áàãâä]/gi, 'a')
       .replace(/[éèẽêë]/gi, 'e')
       .replace(/[íìĩîï]/gi, 'i')
@@ -51,11 +60,11 @@ function App() {
 
 
   return (
-    <div className="container">
-      <VLibras
-        forceOnload={true}
-      />
-      <h1>Adicione uma frase</h1>
+    <div className="container d-flex flex-column gap-3" style={{
+      backgroundColor: '#242424',
+      color: '#fff',
+    }}>
+      <h1 className='fs-1 mt-5'>Adicione uma frase</h1>
       <input
         type="text"
         value={inputValue}
@@ -66,24 +75,19 @@ function App() {
       >
         Adicionar
       </button>
-      <ul>
-        {
-          phrases.map((item, index) => (
-            <li key={index}>
-              <h3>{item.phrases}</h3>
-              <div className='letters-container'>
-                {
-                  item.sinals.map((sinal: string) => (
-                    <div className={`letters-${removeAcentos(sinal.toLocaleLowerCase())}`} >
-                      {sinal === ' ' && <span className="space"> </span>}
-                    </div>
-                  ))
-                }
-              </div>
-            </li>
-          ))
-        }
-      </ul>
+      
+      {
+        phrases.map((item, index) => (
+          <div key={index}>
+            <p className='libras' style={{
+               wordBreak: 'break-all'
+            }}>{removeAcentos(item.phrases)}</p>
+            <p style={{
+               wordBreak: 'break-all'
+            }}>{item.phrases}</p>
+          </div>
+        ))
+      }
     </div>
   )
 }
