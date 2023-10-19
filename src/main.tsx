@@ -4,6 +4,7 @@ import App from './App.tsx'
 import './index.css'
 import {
   createBrowserRouter,
+  Navigate,
   RouterProvider,
 } from "react-router-dom";
 import MotivationsPage from './pages/motivations/index.tsx';
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
     path: "/motivations",
     element: <MotivationsPage />,
   },
+  {
+    path: "*",
+    element: <Navigate to="/" />,
+  }
 ]);
 
 
