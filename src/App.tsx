@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 interface IPhrases {
   phrases: string
   sinals: string[]
@@ -18,7 +19,7 @@ function App() {
     remove.forEach(item => {
       texto = texto.replace(item, '')
     })
-    
+
     return texto
       .replace(/[ÀÁÂÃÄÅ]/gi, 'A')
       .replace(/[ÈÉÊË]/gi, 'E')
@@ -64,7 +65,8 @@ function App() {
       backgroundColor: '#242424',
       color: '#fff',
     }}>
-      <h1 className='fs-1 mt-5'>Adicione uma frase</h1>
+      <Link to='/motivations' className='fs-5 mt-3'>Motivações</Link>
+      <h2 className='fs-2'>Adicione uma frase</h2>
       <input
         type="text"
         value={inputValue}
@@ -75,15 +77,15 @@ function App() {
       >
         Adicionar
       </button>
-      
+
       {
         phrases.map((item, index) => (
           <div key={index}>
             <p className='libras' style={{
-               wordBreak: 'break-all'
+              wordBreak: 'break-all'
             }}>{removeAcentos(item.phrases)}</p>
             <p style={{
-               wordBreak: 'break-all'
+              wordBreak: 'break-all'
             }}>{item.phrases}</p>
           </div>
         ))
