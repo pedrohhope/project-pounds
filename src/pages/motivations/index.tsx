@@ -40,6 +40,11 @@ export default function MotivationsPage() {
                         A regulamentação de leis reconhecendo a Libras e os direitos da comunidade surda brasileira é importante porque contribui para garantir a inclusão dessa comunidade
                     </p>
                 </div>
+
+                <div>
+                    <h1 className={`${styles.Title} fs-2`}>Sinais para usar no dia a dia</h1>
+                    <img src="./1695862003.png" alt="" className='img-fluid' />
+                </div>
             </div>
 
             <div>
