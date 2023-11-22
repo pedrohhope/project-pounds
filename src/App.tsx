@@ -33,7 +33,7 @@ function App() {
       .replace(/[úùũûü]/gi, 'u');
   }
 
-  const onChageInput = (e: any) => {
+  const onChangeInput = (e: any) => {
     setInputValue(e.target.value)
   }
 
