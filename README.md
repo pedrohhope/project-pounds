@@ -16,16 +16,19 @@ Bem-vindo ao repositório do Tradutor de Libras desenvolvido em ReactJS! Este pr
 
 1. **Clone o Repositório:**
    Clone este repositório para o seu ambiente local utilizando o comando :
+   
    ```bash
    git clone https://github.com/seu-usuario/tradutor-libras-react.git
    ```
-2. **Instalação de Dependências:**
+3. **Instalação de Dependências:**
    Navegue até o diretório do projeto e instale as dependências com o comando:
+   
    ```bash
    yarn install
    ```
-3. **Execução do Aplicativo:**
+5. **Execução do Aplicativo:**
   Inicie o aplicativo React com o seguinte comando:
+
    ```bash
    yarn dev
    ```
