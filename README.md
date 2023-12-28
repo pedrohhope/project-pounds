@@ -25,8 +25,3 @@
         <li>Execute <code>yarn</code> para instalar as dependências.</li>
         <li>Inicie o projeto com <code>npm dev</code>.</li>
     </ol>
-
-  <h2>Contribuições</h2>
-    <p>Aceitamos contribuições de todos os níveis de habilidade. Se você tiver alguma sugestão de melhoria, correção de bugs ou novos recursos, sinta-se à vontade para abrir uma issue ou enviar um pull request.</p>
-
-  <p>Esperamos que este projeto seja uma ferramenta valiosa para minha amiga em seu trabalho de faculdade e que ele também contribua para promover a acessibilidade e inclusão digital, tornando a tecnologia mais acessível para todos. Boa sorte, [Nome da Amiga], em sua jornada acadêmica! 📚✨🤟</p>
